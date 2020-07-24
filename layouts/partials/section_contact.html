@@ -12,8 +12,7 @@
   </div><!-- .block-header -->
   <div class="block-content inner-medium">
     {{ partial "markdownify-block" $section.content }}
-    <form name="contactForm" method="POST" data-netlify-honeypot="bot-field" data-netlify="true" id="contact-form"
-      class="contact-form">
+    <form name="contactForm" method="POST" action="/thanks" data-netlify="true" id="contact-form" class="contact-form">
       <p class="screen-reader-text">
         <label id="contact-form-bot-label">Don't fill this out if you're human: <input name="bot-field" aria-labelledby="contact-form-bot-label" /></label>
       </p>
@@ -29,7 +28,6 @@
         <label id="contact-form-message-label" for="contact-form-message" class="form-label">Message</label>
         <textarea name="message" id="contact-form-message" aria-labelledby="contact-form-message-label" class="form-textarea" rows="7"></textarea>
       </p>
-      <input type="hidden" aria-label="contact-form-name" name="form-name" value="contactForm" />
       <p class="form-row form-submit">
         <button type="submit" class="button">Send Message</button>
       </p>
