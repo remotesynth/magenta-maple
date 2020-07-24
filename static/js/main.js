@@ -65,7 +65,7 @@ if (contactForm) {
     }
     return s.join('&').replace(/%20/g, '+');
   };
-  contactForm.addEventListener('submit', () => {
+  contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
     const theForm = e.currentTarget;
