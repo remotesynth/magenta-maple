@@ -12,7 +12,7 @@
   </div><!-- .block-header -->
   <div class="block-content inner-medium">
     {{ partial "markdownify-block" $section.content }}
-    <form name="recaptchaContactForm" method="POST" action="/thanks" data-netlify="true" data-netlify-recaptcha="true" id="simple-contact-form" class="contact-form">
+    <form name="jsContactForm" method="POST" action="/thanks" data-netlify="true" id="js-contact-form" class="contact-form">
       <p class="form-row">
         <label id="contact-form-name-label" for="contact-form-name" class="form-label">Name</label>
         <input type="text" name="name" id="contact-form-name" aria-labelledby="contact-form-name-label" class="form-input">
@@ -25,8 +25,6 @@
         <label id="contact-form-message-label" for="contact-form-message" class="form-label">Message</label>
         <textarea name="message" id="contact-form-message" aria-labelledby="contact-form-message-label" class="form-textarea" rows="7"></textarea>
       </p>
-      <div data-netlify-recaptcha="true" class="form-row">
-      </div>
       <p class="form-row form-submit">
         <button type="submit" class="button">Send Message</button>
       </p>
