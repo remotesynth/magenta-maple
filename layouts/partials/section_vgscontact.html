@@ -12,14 +12,14 @@
   </div><!-- .block-header -->
   <div class="block-content inner-medium">
     {{ partial "markdownify-block" $section.content }}
-    <form name="vgsContactForm" method="POST" action="/thanks" data-netlify="true" data-netlify-recaptcha="true" data-secure="true" id="simple-contact-form" class="contact-form">
+    <form name="vgsContactForm" method="POST" action="/thanks" id="simple-contact-form" class="contact-form" data-netlify  data-secure>
       <p class="form-row">
         <label id="contact-form-name-label" for="contact-form-name" class="form-label">Name</label>
         <input type="text" name="name" id="contact-form-name" aria-labelledby="contact-form-name-label" class="form-input">
       </p>
       <p class="form-row">
         <label id="contact-form-email-label" for="contact-form-email" class="form-label">Email address</label>
-        <input type="email" name="email" id="contact-form-email" aria-labelledby="contact-form-email-label" class="form-input" data-secure-field="true">
+        <input type="email" name="email" id="contact-form-email" aria-labelledby="contact-form-email-label" class="form-input" data-secure-field>
       </p>
       <p class="form-row">
         <label id="contact-form-message-label" for="contact-form-message" class="form-label">Message</label>
