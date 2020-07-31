@@ -1,7 +1,7 @@
 ---
 title: Contact
 sections:
-  - section_id: vgsacontact
+  - section_id: vgscontact
     type: section_vgscontact
     background: gray
     title: Contact
